@@ -1,0 +1,11 @@
+{
+    "APP_TITLE": "Buscador Giphy",
+    "SEARCH": "Pesquisar",
+    "SEARCH_HISTORY": "Histórico de busca",
+    "DELETE_SEARCH_HISTORY": "Limpar histórico",
+    "NO_RECENT_SEARCHES": "Não há buscas recentes.",
+    "NO_RESULTS_SEARCH": "Não foram encontradas imagens que correspondam à sua busca.",
+    "LANGUAGE": "Mudar idioma",
+    "FOOTER_TEXT": "Feito com",
+    "FOOTER_DISCLAIMER": "Todos os direitos reservados."
+}

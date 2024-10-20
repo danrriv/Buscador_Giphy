@@ -1,0 +1,27 @@
+<div class="container mx-auto px-4 py-8">
+  <form (ngSubmit)="searchGif(searchInput)" class="mb-8 flex gap-2">
+    <input type="text" placeholder="{{'SEARCH'|translate}} gifs..." [(ngModel)]="searchInput" name="search"
+      class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <button type="submit"
+      class="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      {{'SEARCH'|translate}}
+    </button>
+  </form>
+@if (searchNull) {
+  <p class="text-center text-gray-500">{{'NO_RESULTS_SEARCH'|translate}}</p>
+}@else {
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 mt-4">
+    @for (item of searchResponse; track $index) {
+    <div class="break-inside-avoid mb-4">
+      <img [src]="item.images.downsized_medium.url"
+        class="w-full h-auto rounded-lg shadow-md hover:shadow-cyan transition-shadow duration-300 ease-in-out">
+    </div>
+    }
+  </div>
+}
+</div>
