@@ -10,22 +10,21 @@ Es un buscador de gifs, utilizando la [API](https://developers.giphy.com) de Gip
 
 #### [Tailwind CSS](https://tailwindcss.com)
 
-```http
- > npm install -D tailwindcss postcss autoprefixer
- > npx tailwindcss init
+```sh
+ npm install -D tailwindcss postcss autoprefixer
+ npx tailwindcss init
 ```
-
 
 #### [ngx-translate](https://www.npmjs.com/package/@ngx-translate/core)
 
-```http
- > npm i @ngx-translate/core
+```sh
+ npm i @ngx-translate/core
 ```
 
 #### [ngx-transalte-http-loader](https://www.npmjs.com/package/@ngx-translate/http-loader)
 
-```http
- > npm i @ngx-translate/http-loader
+```sh
+ npm i @ngx-translate/http-loader
 ```
 ## Idiomas
 - Inglés
