@@ -1,5 +1,5 @@
 # Giphy Browser
-> Proyecto creado para una prueba técnica de [Optima Inmobiliaria](https://www.linkedin.com/company/optimarealstate/jobs/), enfocándose en el uso de Angular, integración de Tailwind CSS y consumo de APIs de terceros.
+> Proyecto creado para una prueba técnica, enfocándose en el uso de Angular, integración de Tailwind CSS y consumo de APIs de terceros.
 
 # Descripción
 Este proyecto fue realizado con [Angular](https://angular.dev/overview) version 18.0.7.
