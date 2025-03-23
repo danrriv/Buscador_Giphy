@@ -21,7 +21,7 @@ Es un buscador de gifs, utilizando la [API](https://developers.giphy.com) de Gip
  npm i @ngx-translate/core
 ```
 
-#### [ngx-transalte-http-loader](https://www.npmjs.com/package/@ngx-translate/http-loader)
+#### [ngx-translate-http-loader](https://www.npmjs.com/package/@ngx-translate/http-loader)
 
 ```sh
  npm i @ngx-translate/http-loader
