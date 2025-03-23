@@ -9,7 +9,7 @@ import { environment } from '../enviroments/enviroment';
 })
 export class GiphyGifService {
 
-  baseUrl = environment.urlGif
+  baseUrl = environment.url_gif
   searchResponse: Datum[] = [];
 
   constructor(private httpClient:HttpClient) { }

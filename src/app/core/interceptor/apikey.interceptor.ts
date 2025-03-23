@@ -6,7 +6,7 @@ export const apikeyInterceptor: HttpInterceptorFn = (req, next) => {
 
   const queryWithKey = req.clone({
     setParams:{
-      api_key: environment.apiKey
+      api_key: environment.API_KEY
     }
   })
   return next(queryWithKey).pipe(
