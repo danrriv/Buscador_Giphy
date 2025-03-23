@@ -45,7 +45,17 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "env": {
+                "NG_APP_API_KEY": "@ng_app_api_key",
+                "NG_APP_URL_GIF": "@ng_app_url_gif"
+              }
             },
             "development": {
               "optimization": false,

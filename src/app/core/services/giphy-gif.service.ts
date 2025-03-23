@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Enviroment } from '../enviroments/enviroment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Datum, GifResponse } from '../model/gif';
+import { environment } from '../enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GiphyGifService {
 
-  baseUrl = Enviroment.url_gif
+  baseUrl = environment.urlGif
   searchResponse: Datum[] = [];
 
   constructor(private httpClient:HttpClient) { }

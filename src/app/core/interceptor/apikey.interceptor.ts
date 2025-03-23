@@ -1,12 +1,12 @@
 import { HttpInterceptorFn } from '@angular/common/http';
-import { Enviroment } from '../enviroments/enviroment';
 import { catchError, throwError } from 'rxjs';
+import { environment } from '../enviroments/enviroment';
 
 export const apikeyInterceptor: HttpInterceptorFn = (req, next) => {
 
   const queryWithKey = req.clone({
     setParams:{
-      api_key: Enviroment.API_KEY
+      api_key: environment.apiKey
     }
   })
   return next(queryWithKey).pipe(
